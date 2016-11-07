@@ -94,6 +94,13 @@ public class ArticleDetailFragment extends Fragment implements
     ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     ((AppCompatActivity) getActivity()).getSupportActionBar().setHomeButtonEnabled(true);
 
+    toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        getActivity().onBackPressed();
+      }
+    });
+
     mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
 /*
     FrameLayout mylayout = (FrameLayout) mRootView.findViewById(R.id.draw_insets_frame_layout);

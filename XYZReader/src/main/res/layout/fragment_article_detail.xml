@@ -8,7 +8,6 @@
     android:layout_width="match_parent"
     android:id="@+id/coordinatorLayout"
     android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
     android:orientation="vertical">
 
    <!-- <android.support.design.widget.AppBarLayout android:id="@+id/app_bar"
@@ -64,8 +63,9 @@
         android:layout_height="match_parent"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
         app:contentScrim="?attr/colorPrimary"
-        app:expandedTitleMarginStart="2dp"
-        app:expandedTitleMarginEnd="2dp"
+        app:expandedTitleMarginStart="10dp"
+        app:expandedTitleMarginEnd="10dp"
+        app:statusBarScrim="@color/colorPrimary"
         app:navigationIcon="@drawable/ic_arrow_back_black_36dp"
         android:fitsSystemWindows="true"
         app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse"
@@ -88,6 +88,7 @@
             android:id="@+id/toolbar"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             android:layout_width="match_parent"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
             app:navigationIcon="@drawable/ic_arrow_back_black_36dp"
             android:layout_height="?attr/actionBarSize"
             app:layout_collapseMode="parallax" />
@@ -146,7 +147,7 @@
                 android:layout_marginRight="@dimen/detail_inner_horiz_margin"
                 android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
                 android:paddingBottom="@dimen/detail_body_bottom_margin"
-                android:textColorLink="@color/colorAccent"/>
+                android:textColorLink="@color/list_title_color"/>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
@@ -154,6 +155,7 @@
         android:id="@+id/share_fab"
         android:layout_gravity="bottom|end"
         android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
         android:layout_width="56dp"
         android:layout_height="56dp"
