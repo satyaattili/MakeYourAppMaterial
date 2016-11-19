@@ -123,7 +123,8 @@
         app:pressedTranslationZ="10dp"
         app:backgroundTint="@color/colorAccent"
         app:layout_anchorGravity="bottom|right|end"
-        android:contentDescription="@string/action_share" />
+        android:contentDescription="@string/action_share"
+        app:layout_behavior="com.example.xyzreader.ui.FabScrollBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>
 </FrameLayout>
