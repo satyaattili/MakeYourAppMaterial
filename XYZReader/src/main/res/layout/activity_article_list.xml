@@ -9,7 +9,7 @@
         android:layout_height="78dp"
         android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:elevation="8dp">
+        android:elevation="@dimen/app_bar_elevation">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
